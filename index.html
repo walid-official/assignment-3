@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
+
+    <!-- Fontawsome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- DaisyUI CDN -->
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,15 +20,89 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                // clifford: '#da373d',
                 "btnIcon-color": "#ABEF5F",
+                "p-color": "#737373",
               }
             }
           }
         }
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+        body{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <header class=" bg-[#f6f6f6] max-w-full">
+        <div class="navbar bg-[#f6f6f6] py-4 w-11/12 mx-auto">
+            <!-- Nav-start -->
+            <div class="navbar-start">
+                <p class="">
+                    <div class="bg-btnIcon-color w-10 h-10 rounded-full flex items-center justify-center">
+                    <img src="assets/right-up.png" class="w-4 " class=" block" alt="arrow-navbar-icon">  
+                    </div>
+                    <a href="#" class="text-xl font-bold ml-2">Rinterio</a>
+                </p>
+            </div>
+            <!-- Nav-center -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="flex space-x-10">
+                <li><a href="#" class="text-p-color font-semibold hover:text-[#494949] duration-300">Home</a></li>
+                <li><a href="#" class="text-p-color font-semibold hover:text-[#494949] duration-300">Service</a></li>
+                <li><a href="#" class="text-p-color font-semibold hover:text-[#494949] duration-300">Portfolio</a></li>
+                <li><a href="#" class="text-p-color font-semibold hover:text-[#494949] duration-300">Blog</a></li>
+                <li><a href="#" class="text-p-color font-semibold hover:text-[#494949] duration-300">Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- Nav-End -->
+            <div class="navbar-end">   
+                <div class="hidden md:flex">
+                    <div class="bg-white w-10 h-10 rounded-full flex items-center justify-center m-2">
+                        <i class="fa-solid fa-magnifying-glass mx-4 cursor-pointer"></i>
+                    </div>
+                   <div class="bg-white w-10 h-10 rounded-full flex items-center justify-center m-2">
+                       <img src="assets/shopping-cart.png" class="mx-4 cursor-pointer" alt="">
+                   </div>
+                   <div class="flex">
+                       <p class="btn bg-btnIcon-color rounded-3xl hover:bg-btnIcon-color border-none font-extrabold text-base">Book Consult
+                       <span class=" bg-black w-[35px] h-[35px] rounded-full flex justify-center items-center"><img src="assets/arrow.png" class="w-3" alt=""></span>
+                   </p>   
+                </div>
+            </div> 
+            <!-- Bar section -->
+            
+            <div class=" ml-2 lg:ml-0 lg:hidden">
+                <label class="btn btn-circle bg-white swap swap-rotate ">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" />
+                        <!-- hamburger icon -->
+                         <svg
+                          class="swap-off fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 512 512">
+                          <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                        </svg>
+                        <!-- close icon -->
+                        <svg
+                          class="swap-on fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 512 512">
+                          <polygon
+                            points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+          </div>
+    </header>
 </body>
 </html>
+
+<!--  -->
